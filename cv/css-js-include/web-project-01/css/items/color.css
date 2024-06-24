@@ -1,0 +1,44 @@
+.theme-basic {
+    /* màu chính */
+    --include--color--main: #232c33;
+    /* sử dụng https://mycolor.space/ để tìm màu highlight lưu ý phải tương phản tốt với màu chính có thể dùng web adobe để hỗ trợ */
+    --include--color--main--highlight: #43AE85;
+    /* màu sáng nhất trong dãy Tint Color Variation */
+    --include--color--main--contrast: #f8f9fa;
+    /* màu sáng nhất trong dãy Tint Color Variation giảm thêm opacity 50% bằng thanh trượt color*/
+    --include--color--main--contrast--subtract: #f8f9fa80;
+    /* màu đơn sắc trong dãy Monochromatic Color là màu liền kề thứ 2 tính từ màu chính theo chiều từ trái sang phải  */
+    --include--color--main--monochromatic: #384651;
+    /* màu sáng nhất trong dãy màu Shade Color Variation */
+    /* màu điểm nhấn ko dùng trên nền color-main mà chỉ dùng liền kề hoặc trên nền trắng */
+    /* hoặc màu hợp với màu trắng */
+    /* --include--color-highlight: #637c90; */
+    --include--color-highlight: #637c90;
+    /*màu liền kề đầu tiên bên trái tính từ màu chính của dãy Shade Color Variation */
+    --include--color--text--focus: #1b2227;
+    /* màu thứ 2 tính từ trái sang phải của dãy Tint Color Variation */
+    --include--color--text--normal: #7890a2;
+    --include--white-color: #FFFFFF;
+}
+
+.theme-2 {
+    /* màu chính */
+    --include--color--main: #101820;
+    /* sử dụng https://mycolor.space/ để tìm màu highlight lưu ý phải tương phản tốt với màu chính có thể dùng web adobe để hỗ trợ */
+    --include--color--main--highlight: #fee715;
+    /* màu sáng nhất trong dãy Tint Color Variation */
+    --include--color--main--contrast: #f8fafb;
+    /* màu sáng nhất trong dãy Tint Color Variation giảm thêm opacity 50% bằng thanh trượt color*/
+    --include--color--main--contrast--subtract: #f8fafb80;
+    /* màu đơn sắc trong dãy Monochromatic Color là màu liền kề thứ 2 tính từ màu chính theo chiều từ trái sang phải  */
+    --include--color--main--monochromatic: #192531;
+    /* màu sáng nhất trong dãy màu Shade Color Variation */
+    /* màu điểm nhấn ko dùng trên nền color-main mà chỉ dùng liền kề hoặc trên nền trắng */
+    /* hoặc màu hợp với màu trắng */
+    --include--color-highlight: #517aa3;
+    /*màu liền kề đầu tiên bên trái tính từ màu chính của dãy Shade Color Variation */
+    --include--color--text--focus: #090e13;
+    /* màu thứ 2 tính từ trái sang phải của dãy Tint Color Variation */
+    --include--color--text--normal: #688eb3;
+    --include--white-color: #FFFFFF;
+}

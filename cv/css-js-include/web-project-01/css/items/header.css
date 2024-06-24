@@ -1,0 +1,260 @@
+/* https://preview.themeforest.net/item/diathena-skin-care-dermatology-elementor-template-kit/full_screen_preview/51444510?_ga=2.245411652.136596242.1711372178-1756703236.1701476293 */
+
+.theme {
+    --e-global-color-primary: #5A7D7C;
+    --e-global-color-secondary: #A0C1D1;
+    --e-global-color-text: #929292;
+    --e-global-color-accent: #2D2D2D;
+    --e-global-color-4da9a17: #232C33;
+    --e-global-color-50b2a21: #FFFFFF45;
+    --e-global-color-2d6a869: #DADADA;
+    --e-global-color-9c764db: #DADFF7;
+    --e-global-color-6b0ce64: #F9F9F9;
+    --e-global-color-fdf12ae: #FFFFFFB3;
+    --e-global-color-e328c38: #AEAEAE;
+    --e-global-color-c9da145: #232C3380;
+    --e-global-color-9c082af: #FFFFFF;
+    --e-global-color-0962333: #02010100;
+}
+
+.header-father-box {
+    height: 91px;
+    display: flex;
+    background-color: var(--include--color--main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    border-bottom: 1px solid var(--include--color--main--contrast--subtract);
+}
+
+
+/* ----------------------------------------------------------------------------------------------left */
+
+.header-father-box .child-box:nth-child(1) {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-father-box .child-box:nth-child(1) .box-child-items {
+    display: flex;
+}
+
+
+/* icon */
+
+.header-father-box .child-box:nth-child(1) .box-child-items .box-grandchildren-items:nth-child(1) {
+    background-color: var(--include--color--main--monochromatic);
+    width: 39px;
+    height: 39px;
+    /* background-color: white; */
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.header-father-box .child-box:nth-child(1) .box-child-items .box-grandchildren-items:nth-child(1) {
+    color: var(--include--color--main--contrast);
+}
+
+
+/* text */
+
+.header-father-box .child-box:nth-child(1) .box-child-items .box-grandchildren-items:nth-child(2) {
+    padding-left: 15px;
+    line-height: 20px;
+}
+
+.header-father-box .child-box:nth-child(1) .box-child-items .box-grandchildren-items:nth-child(2) .item:nth-child(1) {
+    color: var(--include--color--main--contrast--subtract);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-father-box .child-box:nth-child(1) .box-child-items .box-grandchildren-items:nth-child(2) .item:nth-child(2) {
+    color: var(--include--color--main--contrast);
+    font-weight: 400;
+    display: block;
+    font-size: 16px;
+}
+
+
+/* --------------------------------------------------------------------------------------right */
+
+.header-father-box .child-box:nth-child(2) {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items {
+    background-color: var(--include--color--main--contrast);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:hover {
+    background-color: gray;
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:first-child:hover {
+    background-color: var(--include--color--main--highlight);
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items .item:nth-child(1) {
+    color: var(--include--color--main--monochromatic);
+}
+
+
+/* back-to */
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:last-child {
+    position: relative;
+    width: 68px;
+    padding: 0 10px 0 10px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #46424a;
+    color: #DADADA;
+    transition: 0.4s;
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:last-child:hover {
+    transform: scale(1.08);
+    color: #3bff3b;
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:last-child span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient( to right, #46424a, #3bff3b);
+    animation: animate-1 2s linear infinite;
+}
+
+@keyframes animate-1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:last-child span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient( to bottom, #46424a, #3bff3b);
+    animation: animate-2 2s linear infinite;
+}
+
+@keyframes animate-2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:last-child span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient( to left, #46424a, #3bff3b);
+    animation: animate-3 2s linear infinite;
+}
+
+@keyframes animate-3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.header-father-box .child-box:nth-child(2) .box-grandchildren-items:last-child span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient( to top, #46424a, #3bff3b);
+    animation: animate-04 2s linear infinite;
+}
+
+@keyframes animate-04 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* end right */
+
+
+/* web responsive */
+
+
+/* chỉ áp dụng khi màn hình từ 320px đến 1024px */
+
+@media (min-width:320px) and (max-width:1024px) {}
+
+
+/* chỉ áp dụng khi màn hình dưới 768px do vị trí viết cuối cùng nên sẽ dc ưu tiên*/
+
+@media (max-width:768px) {
+    .header-father-box .child-box:nth-child(1) {
+        display: none;
+    }
+    .header-father-box .child-box:nth-child(2) {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:400px) {
+    .header-father-box .child-box:nth-child(1) {
+        display: none;
+    }
+    .header-father-box .child-box:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding-right: 15px;
+    }
+}
+
+
+/* fix theme */
+
+.header-father-box.theme-3 {
+    border-bottom: none;
+    box-shadow: -2px 3px 20px 0px #00000045;
+}

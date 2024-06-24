@@ -1,0 +1,1137 @@
+:root {
+    --Title-large: 39px;
+    --Title-normal: 21px;
+    --Text-normal: 15px;
+}
+
+
+/* ----------------------------------------------------------------------------Global block-element */
+
+
+/* button */
+
+.interface-basic .gobal-button {
+    margin-top: 30px;
+    background-color: var(--include--color--main--monochromatic);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.interface-basic .gobal-button:hover {
+    box-shadow: none !important;
+    background-color: var(--include--color-highlight);
+}
+
+.interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(1) {
+    font-size: var(--Text-normal);
+    font-weight: 700;
+    color: var(--include--color-highlight);
+}
+
+.interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(2) {
+    font-size: var(--Title-large);
+    line-height: 58px;
+    color: var(--include--color--text--focus);
+}
+
+.interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(3) {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: var(--include--color--text--normal);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* global-small */
+
+.interface-basic .global-element-small .grandchildren-item:nth-child(1) {
+    font-size: 45px !important;
+    color: var(--include--color-highlight) !important;
+}
+
+.interface-basic .global-element-small .grandchildren-item:nth-child(2) {
+    font-size: var(--Title-normal) !important;
+    color: var(--include--color--text--focus) !important;
+}
+
+.interface-basic .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--text--normal) !important;
+    margin-top: 10px !important;
+}
+
+
+/* ----------------------------------------------------------------------------block-one */
+
+
+/* element left-top */
+
+.interface-basic .father-box-one .child-box:nth-child(1) .box-child-items {
+    height: 668px;
+    border-radius: 32px;
+}
+
+
+/*element right/bottom */
+
+.interface-basic .father-box-one .child-box:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px 0 45px;
+}
+
+.interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) .box-grandchildren-items:nth-child(1) {
+    width: 50%;
+}
+
+.interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) {
+    display: flex;
+}
+
+
+/* a */
+
+.interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) .box-grandchildren-items:nth-child(2) {
+    border-radius: 25px;
+    height: 200px;
+    width: 50%;
+}
+
+
+/*----------------------------------------------------------------------------block-two */
+
+.interface-basic .father-box-two {
+    margin-top: 100px !important;
+    background-color: var(--include--color--main--contrast);
+}
+
+.interface-basic .father-box-two .box-child-items:nth-child(1) {
+    padding-top: 100px;
+}
+
+.interface-basic .father-box-two .box-child-items:nth-child(1) .grandchildren-item:nth-child(4) {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    height: 504px;
+}
+
+.interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(1) {
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    height: 488px;
+}
+
+.interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(2) {
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    transform: translateX(-150px);
+    margin-top: 45px;
+    width: 100%;
+    height: 270px;
+    background-color: var(--include--white-color);
+}
+
+
+/* vì 2 khối này giống nhau */
+
+.interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(2) .box-grandchildren-items {
+    width: 50%;
+    padding: 39px;
+}
+
+
+/* ----------------------------------------------------------------------------block-three */
+
+.interface-basic .father-box-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to left, var(--include--color--main), var(--include--color--main--monochromatic));
+    /* background-color: var(--include--color--main); */
+    margin-bottom: calc(111px + 50px);
+}
+
+.interface-basic .father-box-three .child-box:nth-child(1) {
+    padding-top: 100px;
+    max-width: 720px;
+}
+
+.interface-basic .father-box-three .global-element-large .box-child-items {
+    text-align: center;
+}
+
+.interface-basic .father-box-three .global-element-large .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast)
+}
+
+.interface-basic .father-box-three .child-box:nth-child(2) {
+    width: 97%;
+    height: 222px;
+    transform: translateY(111px);
+    border-radius: 32px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interface-basic .father-box-three .child-box:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* background-color: aqua; */
+    border-radius: 32px;
+    background-color: transparent;
+    background-image: linear-gradient(120deg, var(--include--color--main--monochromatic) 30%, var(--include--color--main) 70%);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+/* vì 4 cái này giống nhau nên dùng chung 1 css */
+
+.interface-basic .father-box-three .child-box:nth-child(2) .box-child-items {
+    width: 25%;
+    height: 125%;
+    text-align: center;
+    transform: translateY(-10%);
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 0 25px;
+}
+
+.interface-basic .father-box-three .global-element-small .grandchildren-item:nth-child(1),
+.interface-basic .father-box-three .global-element-small .grandchildren-item:nth-child(2) {
+    color: var(--include--white-color) !important;
+}
+
+.interface-basic .father-box-three .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--main--contrast--subtract) !important;
+}
+
+
+/* riêng cái thứ 2 khác background */
+
+.interface-basic .father-box-three .child-box:nth-child(2) .box-child-items:nth-child(2) {
+    background-color: var(--include--color-highlight);
+}
+
+
+/* ----------------------------------------------------------------------------block-four */
+
+.interface-basic .father-box-four {
+    padding-top: 68px !important;
+    padding-bottom: 39px !important;
+}
+
+.interface-basic .father-box-four .child-box:nth-child(2) .child-item:nth-child(1) {
+    color: var(--include--color--text--normal);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.interface-basic .father-box-four .global-element-large .box-child-items .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main);
+}
+
+.interface-basic .father-box-four .global-element-large .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main);
+}
+
+
+/* end code new */
+
+
+/* ----------------------------------------------------------------------------block-five */
+
+.interface-basic .father-box-five {
+    padding-top: 19px;
+    padding-bottom: 79px;
+}
+
+
+/* 3 cái này giống nhau */
+
+.interface-basic .father-box-five .child-box {
+    transition: 0.7s;
+}
+
+.interface-basic .father-box-five .child-box .box-child-items {
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.interface-basic .father-box-five .child-box .box-child-items::before {
+    padding-top: 79%;
+}
+
+
+/* after là lớp màu đen */
+
+.interface-basic .father-box-five .child-box .box-child-items .image2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    transform: translateY(102%);
+    transition: 0.7s;
+    background-color: transparent;
+    background-image: linear-gradient(120deg, var(--include--color--main--monochromatic) 30%, var(--include--color--main) 70%);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* before là lớp màu trắng */
+
+.interface-basic .father-box-five .child-box .box-child-items .image2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    background-image: linear-gradient(120deg, var(--include--color--main--contrast) 30%, var(--include--color--main--contrast) 70%);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.interface-basic .father-box-five .child-box .box-child-items .box-grandchildren-items {
+    width: 79%;
+}
+
+.interface-basic .father-box-five .child-box .global-element-small .grandchildren-item:nth-child(1) {
+    color: var(--include--color--text--normal) !important;
+}
+
+.interface-basic .father-box-five .child-box .global-element-small .grandchildren-item:nth-child(2) {
+    color: var(--include--color--text--focus);
+}
+
+.interface-basic .father-box-five .child-box .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--text--normal);
+}
+
+
+/* riêng cái thứ nhất  */
+
+.interface-basic .father-box-five .child-box:nth-child(1) .box-child-items .image2::before {
+    opacity: 0 !important;
+}
+
+.interface-basic .father-box-five .child-box:nth-child(1) .box-child-items .image2::after {
+    transform: translateY(0%);
+}
+
+
+/* text */
+
+.interface-basic .father-box-five .child-box:nth-child(1) .global-element-small .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main--highlight) !important;
+}
+
+.interface-basic .father-box-five .child-box:nth-child(1) .global-element-small .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast) !important;
+}
+
+.interface-basic .father-box-five .child-box:nth-child(1) .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--main--contrast--subtract) !important;
+}
+
+
+/* hover */
+
+.interface-basic .father-box-five .child-box:hover {
+    transform: translateY(-25px);
+}
+
+.interface-basic .father-box-five .child-box:hover .box-child-items .grandchildren-item::before {
+    opacity: 0 !important;
+}
+
+.interface-basic .father-box-five .child-box:hover .box-child-items .grandchildren-item::after {
+    transform: translateY(0%) !important;
+}
+
+.interface-basic .father-box-five .child-box:hover .global-element-small .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main--contrast) !important;
+}
+
+.interface-basic .father-box-five .child-box:hover .global-element-small .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast) !important;
+}
+
+.interface-basic .father-box-five .child-box:hover .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--main--contrast--subtract) !important;
+}
+
+
+/* hover-button */
+
+.interface-basic .father-box-five .gobal-button:hover {
+    transform: translateY(-10px) !important;
+}
+
+
+/* ----------------------------------------------------------------------------block-six */
+
+.interface-basic .father-box-six {
+    background-color: var(--include--color--main--contrast);
+    display: flex;
+    align-items: center;
+}
+
+.interface-basic .father-box-six .child-box:nth-child(2) .child-item {
+    min-height: 679px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    margin-bottom: -100px;
+}
+
+.interface-basic .father-box-six .child-box:nth-child(2) .box-child-items .grandchildren-item {
+    font-size: 93px;
+    color: var(--include--color--main--contrast);
+}
+
+.interface-basic .father-box-six .child-box:nth-child(3) .box-child-items {
+    margin-top: 50px;
+}
+
+.interface-basic .father-box-six .child-box:nth-child(3) .box-child-items .grandchildren-item {
+    font-size: 39px;
+    color: var(--include--color--main--highlight);
+    padding-right: 15px;
+}
+
+.interface-basic .father-box-six .child-box:nth-child(3) .box-child-items .box-grandchildren-items .item:nth-child(1) {
+    font-size: 20px;
+    color: var(--include--color--text--focus);
+}
+
+.interface-basic .father-box-six .child-box:nth-child(3) .box-child-items .box-grandchildren-items .item:nth-child(2) {
+    color: var(--include--color--text--normal);
+    font-size: 17px;
+}
+
+
+/* ----------------------------------------------------------------------------block-seven */
+
+.interface-basic .father-box-seven {
+    background: linear-gradient( to left, var(--include--color--main), var(--include--color--main--monochromatic));
+    /* background-color: var(--include--color--main); */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.interface-basic .father-box-seven .child-box:nth-child(1) {
+    /* height: 400px; */
+    width: 100%;
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.interface-basic .father-box-seven .child-box:nth-child(1) .child-item {
+    height: 479px;
+    border-radius: 32px;
+    width: 27% !important;
+}
+
+.interface-basic .father-box-seven .child-box:nth-child(1) .box-child-items {
+    padding-left: 60px;
+    padding-right: 120px;
+    width: 73%;
+}
+
+.interface-basic .father-box-seven .global-element-large .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast);
+}
+
+.interface-basic .father-box-seven .global-element-large .box-child-items .grandchildren-item:nth-child(3) {
+    color: var(--include--color--main--contrast--subtract);
+}
+
+.interface-basic .father-box-seven .child-box:not(:first-child) {
+    margin-top: 15px;
+}
+
+.interface-basic .father-box-seven .child-box:not(:first-child) .box-child-items {
+    padding: 35px;
+    border-radius: 32px;
+}
+
+.interface-basic .father-box-seven .child-box:not(:first-child) .global-element-small .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main--contrast--subtract) !important;
+}
+
+.interface-basic .father-box-seven .child-box:not(:first-child) .global-element-small .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast) !important;
+    font-size: 18px !important;
+}
+
+.interface-basic .father-box-seven .child-box:not(:first-child) .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--text--normal) !important;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+
+/* riêng cái thứ 2 */
+
+.interface-basic .father-box-seven .child-box:nth-child(3) .global-element-small {
+    background-color: var(--include--color-highlight) !important;
+}
+
+.interface-basic .father-box-seven .child-box:nth-child(3) .global-element-small .grandchildren-item:nth-child(3) {
+    color: var(--include--color--main--contrast--subtract) !important;
+}
+
+
+/* ----------------------------------------------------------------------------block-eight */
+
+.interface-basic .father-box-eight .child-box {
+    height: 379px;
+    padding: 0 !important;
+}
+
+.interface-basic .father-box-eight .child-box .box-child-items {
+    text-align: center;
+}
+
+.interface-basic .father-box-eight .child-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: transparent;
+    background-image: linear-gradient(120deg, var(--include--color--main--monochromatic) 30%, var(--include--color--main) 70%);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.interface-basic .father-box-eight .child-box .box-child-items .grandchildren-item {
+    color: var(--include--color--main--contrast);
+}
+
+
+/* hover button */
+
+.interface-basic .father-box-eight .child-box .box-child-items .gobal-button:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ----------------------------------------------------------------------------block-nive */
+
+.interface-basic .father-box-nine {
+    padding: 100px 0 100px 0;
+}
+
+.interface-basic .father-box-nine .child-box:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interface-basic .father-box-nine .child-box:nth-child(1) .child-item:nth-child(1) {
+    color: var(--include--color-highlight);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+/*  */
+
+
+/* .interface-basic .father-box-nine .child-box:nth-child(2) {} */
+
+.interface-basic .father-box-nine .child-box:nth-child(2) .box-child-items {
+    background-color: var(--include--color--main--highlight);
+    padding: 35px;
+    border-radius: 16px;
+}
+
+.interface-basic .father-box-nine .child-box:nth-child(3) .box-child-items {
+    background-color: var(--include--color--main);
+    padding: 35px;
+    border-radius: 16px;
+}
+
+.interface-basic .father-box-nine .child-box:nth-child(2) .box-child-items .grandchildren-item:nth-child(1),
+.interface-basic .father-box-nine .child-box:nth-child(3) .box-child-items .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main--contrast);
+    font-size: 21px;
+}
+
+.interface-basic .father-box-nine .child-box:nth-child(2) .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main);
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.interface-basic .father-box-nine .child-box:nth-child(3) .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--text--normal);
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.interface-basic .father-box-nine .child-box:nth-last-child(2) {
+    margin-top: 45px;
+}
+
+.interface-basic .father-box-nine .child-box:nth-last-child(2) .child-item {
+    border-radius: 32px;
+}
+
+
+/* Questions */
+
+.interface-basic .father-box-nine .child-box:last-child {
+    margin-top: 45px;
+}
+
+.interface-basic .father-box-nine .child-box:last-child .box-child-items .grandchildren-item {
+    background-color: var(--include--color--main--contrast);
+    color: var(--include--color--main--monochromatic);
+    line-height: 39px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.hoverColor {
+    background-color: var(--include--color--main--highlight) !important;
+    color: var(--include--color--main--contrast) !important;
+}
+
+.interface-basic .father-box-nine .child-box:last-child .box-child-items .box-grandchildren-items {
+    padding-left: 15px;
+    margin: 15px 0 15px 0;
+    color: var(--include--color--text--normal);
+}
+
+
+/* ----------------------------------------------------------------------------block-ten */
+
+.interface-basic .father-box-ten {
+    height: 510px;
+    position: relative;
+}
+
+.interface-basic .father-box-ten .child-box {
+    padding: 0;
+}
+
+.interface-basic .father-box-ten .child-box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: transparent;
+    background-image: linear-gradient(87deg, var(--include--color--main--monochromatic) 27%, var(--include--color--main) 79%);
+    opacity: 0.45;
+    z-index: 0;
+}
+
+.interface-basic .father-box-ten .box-child-items {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.interface-basic .father-box-ten .box-child-items .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main--contrast);
+    font-size: 35px;
+}
+
+.interface-basic .father-box-ten .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast--subtract);
+    margin-top: 10px;
+}
+
+.interface-basic .father-box-ten .box-child-items .gobal-button:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ----------------------------------------------------------------------------block-eleven */
+
+.interface-basic .father-box-eleven {
+    padding: 100px 0 100px 0;
+}
+
+.interface-basic .father-box-eleven .child-box:nth-child(1) .box-child-items:nth-child(2) .nth-child-box .nth-child-item {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px !important;
+    color: var(--include--color--text--normal);
+}
+
+.interface-basic .father-box-eleven .child-box:nth-child(1) .box-child-items:nth-child(2) {
+    width: 868px !important;
+    z-index: 9999 !important;
+    /* background-color: aqua; */
+}
+
+.interface-basic .father-box-eleven .child-box .box-child-items .box-grandchildren-items {
+    /* background-color: var(--include--color--main--contrast); */
+    border-radius: 32px;
+}
+
+.interface-basic .father-box-eleven .child-box .box-child-items:nth-child(2) .box-grandchildren-items .nth-child-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    transform: translateY(0%);
+    top: 0;
+    background-color: transparent;
+    background-image: linear-gradient(87deg, var(--include--color--main--monochromatic) 27%, var(--include--color--main) 79%);
+    opacity: 1;
+    transition: 0.4s;
+    z-index: -9;
+    border-radius: 32px;
+}
+
+.interface-basic .father-box-eleven .child-box .box-child-items:nth-child(2) .box-grandchildren-items .nth-child-box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0%);
+    top: 0;
+    background-color: var(--include--color--main--contrast);
+    opacity: 1;
+    transition: 0.4s;
+    z-index: -3;
+    border-radius: 32px;
+}
+
+
+/* hover */
+
+
+/* lớp màu đen */
+
+.interface-basic .father-box-eleven .child-box .box-child-items:nth-child(2) .box-grandchildren-items:hover .nth-child-box::after {
+    height: 100%;
+    z-index: -1;
+}
+
+.interface-basic .father-box-eleven .child-box .box-child-items:nth-child(2) .box-grandchildren-items:hover .nth-child-box .nth-child-item:nth-child(1) {
+    color: var(--include--white-color);
+    align-items: center;
+}
+
+.interface-basic .father-box-eleven .child-box .box-child-items:nth-child(2) .box-grandchildren-items:hover .nth-box-child-items .nth-box-grandchildren-items .nth-item:nth-child(1) {
+    color: var(--include--white-color);
+}
+
+
+/* lớp màu trắng */
+
+.interface-basic .father-box-eleven .child-box .box-child-items:nth-child(2) .box-grandchildren-items:hover .nth-child-box::before {
+    transform: translateY(0) !important;
+    opacity: 0;
+    z-index: -9;
+}
+
+.interface-basic .father-box-eleven .child-box:nth-child(2) {
+    height: 639px;
+    border-radius: 32px;
+}
+
+.interface-basic .father-box-eleven .child-box .box-child-items .box-grandchildren-items .nth-child-box .bottom-right {
+    bottom: 25px;
+    right: 25px;
+    font-size: 39px;
+    color: var(--include--color--main--highlight);
+}
+
+
+/* ----------------------------------------------------------------------------block-twelve */
+
+.interface-basic .father-box-twelve {
+    background-color: var(--include--color--main--contrast);
+}
+
+.interface-basic .father-box-twelve .child-box:nth-child(1) {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 102px;
+}
+
+
+/* father box end */
+
+.interface-basic .father-box-end {
+    background-color: var(--include--color--main--contrast);
+}
+
+.interface-basic .father-box-end .child-box {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items {
+    background-color: var(--include--white-color);
+    border-radius: 32px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* khối ảnh */
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) {
+    position: relative;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box-img {
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box-img .item {
+    height: 255px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+
+/* khối title(ảnh-absolute) */
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box {
+    position: absolute;
+    bottom: 29px;
+    left: -10px;
+    background-color: var(--include--color--main--highlight);
+    padding: 8px 25px 8px 25px;
+    line-height: 18px;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box .nth-child-item:nth-child(1) {
+    font-size: 22px;
+    display: block;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box .nth-child-item:nth-child(2) {
+    font-size: 13px;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box::before {
+    content: '';
+    position: absolute;
+    border-width: 5px !important;
+    left: 0% !important;
+    top: -9px !important;
+    border-right: solid black;
+    border-left: solid transparent;
+    border-bottom: solid black;
+    border-top: solid transparent;
+}
+
+
+/* khối title trên (ảnh) */
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1) .nth-child-box-nn {
+    font-size: 13px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--include--color--main);
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: var(--include--white-color);
+}
+
+
+/* hover ảnh */
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(1):hover .item {
+    transform: rotateZ(2deg) scale(1.05);
+}
+
+
+/* khối text posts */
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(2) {
+    padding: 15px;
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(2) .item:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: var(--include--color--text--focus);
+}
+
+.interface-basic .father-box-end .child-box .box-child-items .box-grandchildren-items:nth-child(2) .item:nth-child(2) {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--include--color--text--normal);
+}
+
+.interface-basic .father-box-end .child-box:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+/*----------------------------------------------------------------------------------- web responsive */
+
+
+/* chỉ áp dụng khi màn hình từ 320px đến 1024px */
+
+@media (min-width:320px) and (max-width:1024px) {
+    /* khối 1 */
+    .interface-basic .father-box-one .child-box:nth-child(1) .box-child-items {
+        height: 320px;
+        border-radius: 32px;
+    }
+    .interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(1) {
+        margin-top: 15px;
+    }
+    .interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) {
+        margin-top: 15px;
+    }
+    /* Khối 2 */
+    .interface-basic .father-box-two .box-child-items:nth-child(1) {
+        padding-top: 55px;
+    }
+    .interface-basic .father-box-two .box-child-items:nth-child(1) .grandchildren-item:nth-child(4) {
+        border-radius: 32px;
+    }
+    .interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(1) {
+        border-radius: 32px;
+        margin-top: 36px;
+    }
+    .interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(2) {
+        transform: translateY(-50%);
+        margin-top: 0px;
+        width: 82%;
+        margin: auto;
+        height: 242px;
+    }
+    /* khối 3 */
+    .interface-basic .father-box-three .child-box:nth-child(2) {
+        height: 468px;
+    }
+    .interface-basic .father-box-three .child-box:nth-child(2) .box-child-items {
+        width: 50%;
+        height: auto !important;
+    }
+    /* khối 04 */
+    .interface-basic .father-box-five .child-box {
+        margin-bottom: 25px;
+    }
+    .interface-basic .father-box-five .child-box:nth-child(3) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 1000%;
+        max-width: 100%;
+    }
+    .interface-basic .father-box-five .child-box:nth-child(3) .box-child-items::before {
+        padding-top: 39%;
+    }
+    .interface-basic .father-box-five .child-box:hover {
+        transform: translateY(-7px);
+    }
+    /* khối 06 */
+    .interface-basic .father-box-six .child-box:nth-child(1) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 1000%;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    .interface-basic .father-box-six .child-box:nth-child(2) .child-item {
+        min-height: 500px;
+        border-radius: 0;
+        border-top-right-radius: 32px;
+        margin-bottom: 0px;
+    }
+    /* khối 7 */
+    .interface-basic .father-box-seven .child-box:nth-child(1) {
+        display: inline-block !important;
+    }
+    .interface-basic .father-box-seven .child-box:nth-child(1) .child-item {
+        border-radius: 32px;
+        width: 100% !important;
+        height: 302px;
+        width: calc(100% - 50px) !important;
+        margin: auto;
+    }
+    .interface-basic .father-box-seven .child-box:nth-child(1) .box-child-items {
+        padding: 15px 25px 15px 25px;
+        width: 100%;
+    }
+    /* khối 8 */
+    .interface-basic .father-box-eight .child-box {
+        height: 256px;
+    }
+    /* khối 9 */
+    .interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(2) {
+        margin-bottom: 25px;
+    }
+    .interface-basic .father-box-nine .child-box:nth-child(2) {
+        margin-bottom: 15px;
+    }
+    /* khối 10 */
+    .interface-basic .father-box-ten {
+        height: 400px;
+    }
+    .interface-basic .father-box-ten .box-child-items {
+        width: calc(100% - 30px);
+        margin: auto;
+    }
+    /* khối 11 */
+    .interface-basic .father-box-eleven .child-box:nth-child(2) {
+        margin-top: 30px;
+    }
+    .interface-basic .father-box-eleven .child-box:nth-child(2) {
+        height: 350px;
+    }
+}
+
+
+/* chỉ áp dụng khi màn hình dưới 768px do vị trí viết cuối cùng nên sẽ dc ưu tiên*/
+
+@media (max-width:768px) {
+    /* Global */
+    .interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(1) {
+        margin-top: 15px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .interface-basic .global-element-large .box-child-items .grandchildren-item:nth-child(2) {
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+    /* khối 1 */
+    .interface-basic .father-box-one .child-box:nth-child(1) .box-child-items {
+        height: 355px;
+    }
+    .interface-basic .father-box-one .child-box:nth-child(2) {
+        padding: 0 15px 0 15px !important;
+    }
+    .interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(2) {
+        display: inline-block !important;
+    }
+    .interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) .box-grandchildren-items:nth-child(1),
+    .interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) .box-grandchildren-items:nth-child(2) {
+        width: 100%;
+    }
+    .interface-basic .father-box-one .child-box:nth-child(2) .box-child-items:nth-child(2) {
+        display: inline !important;
+    }
+    /* khối 2  */
+    .interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(2) {
+        width: calc(100% - 46px);
+        height: 568px;
+        display: flex !important;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .interface-basic .father-box-two .child-box:nth-child(2) .box-child-items:nth-child(2) .box-grandchildren-items {
+        width: 100%;
+        padding: 39px;
+        text-align: center;
+    }
+    .interface-basic .father-box-two .child-box:nth-child(2) {
+        height: 828px;
+    }
+    /* khối 3 */
+    .interface-basic .father-box-three .child-box:nth-child(2) {
+        height: 879px;
+        width: 91%;
+        transform: translateY(59px);
+    }
+    .interface-basic .father-box-three .child-box:nth-child(2) .box-child-items {
+        width: 100%;
+        height: auto !important;
+    }
+    .interface-basic .father-box-three .child-box:nth-child(2) .box-child-items {
+        border-radius: 0px;
+    }
+    .interface-basic .father-box-three {
+        margin-bottom: calc(79px);
+    }
+    /* khối 4 */
+    .interface-basic .father-box-four {
+        padding-top: 0px !important;
+        padding-bottom: 30px !important;
+    }
+    .interface-basic .father-box-five .child-box:nth-child(1) .box-child-items::before,
+    .interface-basic .father-box-five .child-box:nth-child(2) .box-child-items::before,
+    .interface-basic .father-box-five .child-box:nth-child(3) .box-child-items::before {
+        padding-top: 68%;
+    }
+    /* khối 6 */
+    .interface-basic .father-box-six .child-box:nth-child(3) .box-child-items {
+        margin: 50px 0 50px 0;
+    }
+    /* khối 8 */
+    .interface-basic .father-box-eight .child-box .box-child-items {
+        width: 96vmax !important;
+    }
+    /* khối 10 */
+    .interface-basic .father-box-ten {
+        height: 678px;
+    }
+    /* khối 11 */
+    .interface-basic .father-box-eleven {
+        padding: 15px;
+    }
+}
+
+@media (max-width:400px) {
+    .interface-basic .father-box-five .child-box:nth-child(1) .box-child-items::before,
+    .interface-basic .father-box-five .child-box:nth-child(2) .box-child-items::before,
+    .interface-basic .father-box-five .child-box:nth-child(3) .box-child-items::before {
+        padding-top: 102%;
+    }
+}
+
+
+/* fix css by color theme 3 */
+
+.interface-basic .father-box-four .global-element-large.theme-3 .box-child-items .grandchildren-item:nth-child(1) {
+    color: var(--include--color--main--contrast--subtract);
+}
+
+.interface-basic .father-box-four .global-element-large.theme-3 .box-child-items .grandchildren-item:nth-child(2) {
+    color: var(--include--color--main--contrast);
+}
+
+.interface-basic .father-box-four .child-box:nth-child(2).theme-3 .child-item:nth-child(1) {
+    color: var(--include--color--main--contrast--subtract);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.interface-basic .father-box-four .theme-3>.gobal-button {
+    margin-top: 30px;
+    background-color: var(--include--color-highlight);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.interface-basic .father-box-twelve.theme-3,
+.interface-basic .father-box-end.theme-3 {
+    background-color: var(--include--color--main--highlight);
+}

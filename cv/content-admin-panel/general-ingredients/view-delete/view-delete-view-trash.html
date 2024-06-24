@@ -1,0 +1,33 @@
+<div style="width: 100vmax; height:100vh;position: fixed;top: 0;left: 0; z-index: 9999;background-color:#22211ed5;">
+
+</div>
+
+<div class="col-12 w3-card-2 padding-15 reset-col round-large" style="   
+position: fixed;
+top: 50%;
+background-color: #777779;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+z-index: 9999;
+width: 600px;
+height: 200px;
+text-align: center;">
+    <div style="margin-top: -15px;">
+        <h6 class="color-60 padding-t-5" style="border-top-left-radius: 8px; border-top-right-radius: 8px;">Delete</h6>
+    </div>
+    <p style="color: #f1df0b;line-height: initial" class="margin-t-15">Are you sure you want to delete posts ?</p>
+    <!-- SET THÔNG SỐ -->
+
+    <p style="line-height: initial;" ng-if="page_data == 'posts'" class="margin-t-15">{{one_data.data_name}}</p>
+
+    </p>
+    <!-- END SET THÔNG SỐ -->
+    <div class="flex margin-t-15" style="justify-content: center;">
+        <div style="font-size: 14px;padding: 0 !important; border-radius: 5px;" class="hq-btn color-10" ng-click="deleteAct(one_data,page_data)">
+            <i class="fa-regular fa-trash margin-r-5"></i> Yes
+        </div>
+        <div ng-click="Delete(one_data)" style="font-size: 14px;padding: 0 !important; border-radius: 5px; " class="hq-btn color-30">
+            <i class="fa-regular fa-xmark margin-r-5"></i> Cancel
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+.button-setting-source {
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    /* background-color: #656e6e; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* border: 1px solid #ffffff5d; */
+    z-index: 9999;
+    cursor: pointer;
+    transition: 0.4s;
+    animation: animate-bt 1s ease-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+.button-setting-source::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient( to right, #db5b6c, #ffb3a7);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 100vmax;
+}
+
+@keyframes animate-bt {
+    0% {
+        transform: translateY(-10%);
+        border: 0px solid #db5b6c;
+        box-shadow: 0 2px 15px #ffb3a7;
+    }
+    100% {
+        transform: translateY(10%);
+        border: 2px solid #ffb3a7;
+        box-shadow: 0 2px 20px #ffb3a7;
+    }
+}
+
+.button-setting-source:hover {
+    background-color: #788889;
+}
+
+.button-setting-source.hidden {
+    transform: translateX(200%);
+}
+
+.setting-source {
+    position: fixed;
+    bottom: 15px;
+    right: -100%;
+    z-index: 99999;
+    background-color: #f9f9f9;
+    border: 1px solid #80808068;
+    transition: 0.4s;
+}
+
+.close-setting-source {
+    top: -25px;
+    right: -20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.setting-source.show {
+    right: 15px;
+    transition: 0.4s;
+}

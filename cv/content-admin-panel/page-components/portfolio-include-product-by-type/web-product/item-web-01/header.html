@@ -1,0 +1,73 @@
+<div class=" header-father-box {{import_theme}}" style="z-index: 9998;">
+    <div class="child-box">
+        <div class="box-child-items">
+            <div class=" flex-align-middle box-grandchildren-items">
+                <i class="fa-duotone fa-phone item"></i>
+            </div>
+            <div class=" box-grandchildren-items">
+                <span class="uppercase item">MAKE A CALL</span>
+                <strong class="item">0981195878</strong>
+            </div>
+
+        </div>
+
+        <div class=" box-child-items">
+            <div class=" flex-align-middle box-grandchildren-items">
+                <i class="fa-duotone fa-phone"></i>
+            </div>
+            <div class=" box-grandchildren-items">
+                <span class="uppercase item">Email</span>
+                <strong class="item">nguyenhaiquandh@gmail.com</strong>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="child-box">
+        <div class="flex box-child-items">
+            <div class=" flex-align-middle  box-grandchildren-items">
+                <a target="_blank" ng-href="https://www.facebook.com/HQcssmultimedia/"><i class="fa-brands fa-facebook item"></i></a>
+
+            </div>
+            <div class=" flex-align-middle  box-grandchildren-items">
+                <i class="fa-brands fa-twitter item"></i>
+            </div>
+            <div class=" flex-align-middle  box-grandchildren-items">
+                <i class="fa-brands fa-youtube item"></i>
+            </div>
+            <div class=" flex-align-middle  box-grandchildren-items">
+                <i class="fa-brands fa-pinterest item"></i>
+            </div>
+            <div class=" flex-align-middle box-grandchildren-items close_preview_product" ng-click="clear_web_product_01()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa-light fa-backward item"></i>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+
+        $('.show_overlay_rl').on('click', function(event) {
+            event.preventDefault();
+            $('.overlay-class-2').addClass('show-overlay-rl');
+
+
+        });
+        $('.close_preview_product').on('click', function(event) {
+            event.preventDefault();
+            $('.overlay-class-2').removeClass('show-overlay-rl');
+
+        });
+
+
+    });
+</script>

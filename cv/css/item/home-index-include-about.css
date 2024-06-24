@@ -1,0 +1,94 @@
+/* 02 */
+
+
+/* img */
+
+.father-box-about-row-two .child-box:nth-child(1) .child-item {
+    width: 100%;
+    height: 468px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* text */
+
+.father-box-about-row-two .child-box:nth-child(2) .box-child-items:nth-child(1) {
+    border-bottom: 0.5px solid #91919179;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .infomation {
+    margin-top: 30px;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .infomation .box-grandchildren-items {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .infomation .box-grandchildren-items strong {
+    color: var(--color--text--focus) !important;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .infomation .box-grandchildren-items span {
+    color: var(--color--text--highlight);
+    font-weight: 600;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .box-child-items:nth-child(3) .box-grandchildren-items {
+    margin-left: 68px !important;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .box-child-items:nth-child(3) .box-grandchildren-items .item-fist::after {
+    content: '';
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 117%;
+    background-color: #fee71579;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .box-child-items:nth-child(3) .box-grandchildren-items .item {
+    font-size: 25px;
+    margin: 0 5px;
+    color: var(--color--text--focus);
+    transition: 0.4s;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .box-child-items:nth-child(3) .box-grandchildren-items div:hover .item {
+    color: #919191;
+}
+
+.father-box-about-row-two .child-box:nth-child(2) .box-child-items:nth-child(3) .box-grandchildren-items div:nth-child(1):hover .item {
+    color: #fee715;
+}
+
+
+/* res */
+
+@media (max-width:543px) {
+    .father-box-about-row-two .child-box:nth-child(2) .infomation .box-grandchildren-items {
+        width: 100%;
+    }
+    .father-box-about-row-two .child-box:nth-child(2) .infomation {
+        flex-direction: column;
+    }
+    .father-box-about-row-two .box-download {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (max-width:1025px) {
+    .father-box-about-row-two .child-box:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .father-box-about-row-two .child-box:nth-child(1) .child-item {
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

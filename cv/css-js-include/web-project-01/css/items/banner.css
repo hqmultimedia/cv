@@ -1,0 +1,110 @@
+.interface-basic .banner-father-box {
+    height: calc( 100vh + 139px);
+    position: relative;
+    margin-bottom: calc(75px + 100px);
+    background-position: 0px 91px !important;
+}
+
+.interface-basic .banner-father-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    background-image: linear-gradient(120deg, var(--include--color--main--monochromatic) 30%, var(--include--color--main) 70%);
+    opacity: 0.32;
+    width: 100%;
+    height: 100%;
+}
+
+.interface-basic .true.banner-father-box::after {
+    opacity: 0 !important;
+}
+
+
+/* Khối title */
+
+.interface-basic .banner-father-box .child-box:nth-child(2) {
+    width: 50vmax;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    padding: 0 15px;
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+
+.interface-basic .banner-father-box .child-box:nth-child(2) .child-item:nth-child(1) {
+    color: var(--include--color--main--highlight);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.interface-basic .banner-father-box .child-box:nth-child(2) .child-item:nth-child(2),
+.interface-basic .banner-father-box .child-box:nth-child(2) .child-item:nth-child(3) {
+    color: var( --include--white-color);
+    font-size: 36px;
+}
+
+.interface-basic .banner-father-box .child-box:nth-child(2) .child-item:nth-child(4) {
+    color: var(--include--color--main--contrast--subtract);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.interface-basic .banner-father-box .child-box:nth-child(2) .gobal-button:hover {
+    transform: translateY(-10px);
+}
+
+
+/* block banner bottom */
+
+.interface-basic .banner-father-box .child-box:nth-child(3) {
+    position: absolute;
+    background-color: var(--include--color--main);
+    height: 150px;
+    width: 90%;
+    bottom: -75px;
+    right: 0;
+    z-index: 9999;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.interface-basic .banner-father-box .child-box:nth-child(3) .clear-owl-dots .owl-dots {
+    display: none;
+}
+
+.interface-basic .banner-father-box .child-box:nth-child(3) .box-child-items .box-grandchildren-items {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* web responsive */
+
+
+/* chỉ áp dụng khi màn hình từ 320px đến 1024px */
+
+@media (min-width:320px) and (max-width:1024px) {
+    .interface-basic .banner-father-box .child-box:nth-child(2) {
+        width: 100vmax;
+    }
+}
+
+
+/* chỉ áp dụng khi màn hình dưới 768px do vị trí viết cuối cùng nên sẽ dc ưu tiên*/
+
+@media (max-width:768px) {
+    .interface-basic .banner-father-box .child-box:nth-child(2) {
+        width: 86vmax;
+    }
+}
+
+@media (max-width:400px) {
+    .interface-basic .banner-father-box .child-box:nth-child(2) {
+        width: 50vmax;
+    }
+}

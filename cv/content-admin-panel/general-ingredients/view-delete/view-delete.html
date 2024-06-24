@@ -1,0 +1,44 @@
+<div style="width: 100vmax; height:100vh;position: fixed;top: 0;left: 0; z-index: 9999;background-color:#22211ed5;">
+
+</div>
+
+<div class="col-12 w3-card-2 padding-15 reset-col round-large" style="   
+position: fixed;
+top: 50%;
+background-color: #777779;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+z-index: 9999;
+width: 500px;
+text-align: center;">
+    <div style="margin-top: -15px;">
+        <h6 class="color-60 padding-tb-15 margin-b-15 " style="border-top-left-radius: 8px; border-top-right-radius: 8px;">Delete</h6>
+    </div>
+    <p style="color: #f1df0b;" class="padding-b-5">Are you sure you want to delete it ?</p>
+    <!-- SET THÔNG SỐ -->
+    <p ng-if="page_data == 'menu'">{{one_data.name}}</p>
+    <p ng-if="page_data == 'category'">{{one_data.name}}</p>
+    <p ng-if="page_data == 'posts'">{{one_data.data_name}}</p>
+    <p ng-if="page_data == 'user'">{{one_data.name}}</p>
+    <p ng-if="page_data == 'banner'">Banner</p>
+    <p ng-if="page_data == 'banner'">
+        <div ng-if="one_data.location==1">
+            <span>Location : Home</span>
+        </div>
+        <div ng-if="one_data.location==2">
+            <span>Location : Posts</span>
+        </div>
+        <div ng-if="one_data.location==3">
+            <span>Location : Search</span>
+        </div>
+    </p>
+    <!-- END SET THÔNG SỐ -->
+    <div class="flex padding-b-15" style="justify-content: center;">
+        <div style="font-size: 14px;" class="border-none margin-t-15 hq-btn color-60 text-color-60-contrast flex-align-items-center" ng-click="deleteAct(one_data,page_data)">
+            <i class="fa-regular fa-trash margin-r-5"></i> Yes
+        </div>
+        <div ng-click="Delete(one_data)" style="font-size: 14px;" class="border-none margin-t-15 margin-l-5 hq-btn color-30 flex-align-items-center">
+            <i class="fa-regular fa-xmark margin-r-5"></i> Cancel
+        </div>
+    </div>
+</div>

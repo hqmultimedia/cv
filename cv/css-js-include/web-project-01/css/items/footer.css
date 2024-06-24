@@ -1,0 +1,15 @@
+.footer-father-box {
+    background-color: var(--include--color--main);
+}
+
+.interface-basic .footer-father-box .child-box:nth-child(1) .box-child-items {
+    display: flex;
+    margin: 0;
+}
+
+
+/* fix theme */
+
+.footer-father-box.theme-3 {
+    background-color: var( --include--color--main--contrast);
+}
